@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    
+    <!-- Primary Meta Tags -->
+    <title>Muhammad Maheem | AI Engineer & Creative Developer</title>
+    <meta name="title" content="Muhammad Maheem | AI Engineer & Creative Developer" />
+    <meta name="description" content="Passionate AI Engineering student specializing in Machine Learning, Computer Vision, and Full-Stack Development. Explore my projects in RAG, Deep Learning, and Web Development." />
+    <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, Computer Vision, Python, React, Next.js, Portfolio, Muhammad Maheem" />
+    <meta name="author" content="Muhammad Maheem" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://muhammadmaheem.github.io" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://muhammadmaheem.github.io" />
+    <meta property="og:title" content="Muhammad Maheem | AI Engineer & Creative Developer" />
+    <meta property="og:description" content="Passionate AI Engineering student specializing in Machine Learning, Computer Vision, and Full-Stack Development." />
+    <meta property="og:image" content="https://muhammadmaheem.github.io/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://muhammadmaheem.github.io" />
+    <meta property="twitter:title" content="Muhammad Maheem | AI Engineer & Creative Developer" />
+    <meta property="twitter:description" content="Passionate AI Engineering student specializing in Machine Learning, Computer Vision, and Full-Stack Development." />
+    <meta property="twitter:image" content="https://muhammadmaheem.github.io/og-image.jpg" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0A0A0F" />
+    <meta name="msapplication-TileColor" content="#0A0A0F" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+    
+    <!-- Critical CSS inline for above-the-fold content -->
+    <style>
+      /* Critical CSS for initial load */
+      html { scroll-behavior: smooth; }
+      body { 
+        margin: 0; 
+        background: #0A0A0F; 
+        color: #ffffff;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      #root { min-height: 100vh; }
+      
+      /* Loading spinner styles */
+      .loading-spinner {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0A0A0F;
+        z-index: 9999;
+      }
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid rgba(123, 97, 255, 0.3);
+        border-top-color: #7B61FF;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" />
+    <script type="module" crossorigin src="/test/assets/index-CebKCCv1.js"></script>
+    <link rel="modulepreload" crossorigin href="/test/assets/vendor-Cgg2GOmP.js">
+    <link rel="modulepreload" crossorigin href="/test/assets/three-DbJRWJQY.js">
+    <link rel="stylesheet" crossorigin href="/test/assets/index-y_2MN013.css">
+  </head>
+  <body>
+    <!-- Loading spinner (removed by React) -->
+    <div id="loading" class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <!-- Remove loading spinner when app loads -->
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loading');
+        if (loader) {
+          loader.style.opacity = '0';
+          loader.style.transition = 'opacity 0.3s';
+          setTimeout(() => loader.remove(), 300);
+        }
+      });
+    </script>
+  </body>
+</html>
